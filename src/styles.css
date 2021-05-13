@@ -1,0 +1,105 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  position: relative;
+  color: white;
+  height: 30vh;
+  background: linear-gradient(to right, rgb(62, 84, 163), rgb(86, 102, 161));
+}
+.top h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.input {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.input input {
+  width: 60%;
+  max-width: 400px;
+  height: 35px;
+  margin: 0;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  color: gray;
+  padding: 0 5px;
+  outline: none;
+}
+
+.input button {
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  border-radius: 0 10px 10px 0;
+}
+
+.search:hover {
+  cursor: pointer;
+}
+
+.ip_info {
+  border-radius: 10px;
+  padding: 35px;
+  background-color: white;
+  display: flex;
+  color: #111111;
+  justify-content: space-around;
+  margin: 0 10%;
+  position: relative;
+  bottom: -10vh;
+  z-index: 50;
+}
+
+.ip_info div {
+  width: 25%;
+  margin-left: 2%;
+}
+.ip_info div p {
+  overflow-wrap: break-word;
+}
+
+.littlefont {
+  font-size: 10px;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+.border_left {
+  border-right: 1px solid lightgray;
+}
+
+#mapid {
+  height: 70vh;
+  z-index: 1;
+}
+
+@media (max-width: 780px) {
+  .ip_info {
+    flex-direction: column;
+    margin: 0 25%;
+  }
+  .ip_info div {
+    width: auto;
+    padding: 10px 0;
+  }
+  .border_left {
+    border-right: none;
+  }
+  .top {
+    height: 40vh;
+  }
+  .map {
+    height: 60vh;
+  }
+}

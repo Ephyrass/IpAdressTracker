@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    
+  </head>
+
+  <body>
+    <div class="body">
+      <div class="top">
+        <h1>IP Adress Tracker</h1>
+        <form class="input"><input class='searchbar' type="text" placeholder="Search for any IP adress"></input><button type='submit' class="search">></button> </form> 
+      <div class="ip_info">
+        <div class="ip_adress border_left"><p class='littlefont'>IP ADRESS</p><p> <strong class=" result_adress">192.212.174.101</strong></p></div>
+        <div class="border_left ip_location"><p class='littlefont'>LOCATION</p><p><strong class=" result_location">Brooklyn,NY,10001</strong></p></div>
+        <div class="border_left ip_timezone"><p class='littlefont'>TIMEZONE</p><p><strong>UTC</strong><strong class=" result_timezone">-05:00</strong></p></div>
+        <div class="ip_isp"><p class='littlefont'>ISP</p><p><strong class="result_isp" >Space X</strong></p></div>
+			</div>
+		</div>
+      
+      <div id="mapid"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>
